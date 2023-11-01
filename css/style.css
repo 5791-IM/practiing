@@ -3,3 +3,21 @@
 *::after {
   box-sizing: border-box;
 }
+/* Base */
+body {
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1280px;
+}
+
+/* Start Header */
+.header {
+  width: 1279.059px;
+  height: 1px;
+  opacity: 0.2;
+  background: rgba(255, 255, 255, 0.7);
+}
