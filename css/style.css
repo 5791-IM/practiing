@@ -3,21 +3,147 @@
 *::after {
   box-sizing: border-box;
 }
-/* Base */
+
 body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background: var(--black, #121212);
+  color: var(--white, #fff);
 }
+
 a {
   text-decoration: none;
 }
 
-.container {
-  width: 1280px;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-/* Start Header */
-.header {
-  width: 1279.059px;
-  height: 1px;
-  opacity: 0.2;
-  background: rgba(255, 255, 255, 0.7);
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ol {
+  list-style: none;
+}
+
+.container {
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 100px;
+  }
+}
+/* Mobile screen */
+.our_courses-section .our_courses-block {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.our_courses-title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.04em;
+  font-style: normal;
+}
+.our_courses-title-accent {
+  color: #bea69e;
+}
+.our_courses-text {
+  /* width: 335px; */
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.28;
+  letter-spacing: -0.02;
+}
+.our_courses-card-list {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding-top: 40px;
+}
+.our_courses-card-item {
+  width: 335px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
+}
+.our_courses-block-card {
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 233px;
+  padding: 20px 20px 0 20px;
+}
+.our_courses-card-title {
+  padding: 28px 28px 0 28px;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 114.286% */
+}
+.our_courses-card-text {
+  padding: 164px 28px 28px 28px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.28px;
+}
+/* Tablet screen */
+@media screen and (min-width: 768px) {
+  .our_courses-block {
+    display: flex;
+    justify-content: center;
+    gap: 58px;
+  }
+  .our_courses-title {
+    font-size: 48px;
+    line-height: 1.12;
+  }
+  .our_courses-text {
+    line-height: 1.25;
+  }
+}
+
+/* Desktop screen */
+@media screen and (min-width: 1280px) {
+  .our_courses-block {
+    gap: 410px;
+  }
 }
